@@ -1,3 +1,99 @@
+# LGCNS-5G-RAN-Stack
+
+LGCNS-5G-RAN-Stack is a 5G NR RAN protocol stack implementation
+covering Layer 2 and Layer 3 (MAC, RLC, PDCP, RRC),
+productized by LG CNS for commercial, PoC, and integration deployments.
+
+This project is designed to operate with LGCNS-5G-RAN-PHY and
+LGCNS 5G Core components, providing an end-to-end, modular 5G RAN solution.
+
+
+## Key Features
+
+- 5G NR MAC, RLC, PDCP, and RRC implementation
+- CU/DU-oriented architecture
+- Optimized for virtualized and cloud-native environments
+- Integration-ready with GPU-accelerated PHY
+- Product-grade build, configuration, and deployment flow
+- Suitable for PoC, Private 5G, and research environments
+
+
+## Architecture Overview
+
+LGCNS-5G-RAN-Stack implements the upper layers of the 5G NR RAN:
+
+- MAC: scheduling, HARQ management, logical channel handling
+- RLC: segmentation, reassembly, retransmission
+- PDCP: ciphering, integrity, header compression
+- RRC: connection control and radio resource management
+
+
+## Supported Use Cases
+
+- 5G RAN PoC and lab validation
+- Private 5G deployments
+- CU/DU split architecture evaluation
+- Integration testing with LGCNS 5G Core
+- Research and performance evaluation
+
+
+## Notice
+
+This repository is derived from the following upstream open-source project:
+
+- **OpenAirInterface 5G (openairinterface5g)**  
+  Maintained by the OpenAirInterface Software Alliance  
+  https://github.com/openairinterface/openairinterface5g
+
+The upstream project provides a reference implementation of
+5G NR RAN components. LG CNS has extended and productized the upstream code
+to meet commercial and deployment requirements.
+
+
+### Modifications and Enhancements by LG CNS
+
+- Modularization for product-oriented deployment
+- Integration interfaces for LGCNS RAN PHY and Core
+- Build and configuration simplification
+- Operational tooling and automation
+- Product-level testing and validation
+
+## License
+
+This project is licensed under the **OAI Public License, Version 1.1**.
+
+The OAI Public License is based on the Apache License 2.0 and
+includes additional provisions related to patent licensing
+under FRAND (Fair, Reasonable, and Non-Discriminatory) terms.
+
+
+## Disclaimer
+
+This software is provided for use in controlled environments.
+Performance, feature completeness, and regulatory compliance may vary
+depending on deployment configuration and target hardware.
+
+Commercial support, SLAs, and certifications are provided separately
+under LG CNS agreements and are not implied by this repository.
+
+
+## Contact
+
+For inquiries related to LG CNS 5G RAN solutions, please contact
+the LG CNS 5G Business team through official LG CNS channels.
+
+
+</br></br></br>
+--- 
+# Appendix A. Upstream Open Source README (Reference)
+
+The following content is the original README from the upstream project
+**OpenAirInterface 5G (openairinterface5g)**.
+
+The content below is provided for reference only and has not been modified,
+except for formatting or section heading adjustments.
+
+---
 <h1 align="center">
     <a href="https://openairinterface.org/"><img src="https://openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png" alt="OAI" width="550"></a>
 </h1>
